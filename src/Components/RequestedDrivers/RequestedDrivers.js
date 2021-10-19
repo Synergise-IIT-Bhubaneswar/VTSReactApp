@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { BASE_URL } from '../../Data/Constants';
 import RequestedDriverCard from '../../UI/RequestedDriverCard/RequestedDriverCard';
-import { initRequestedDrivers, rejectDriver, verifyDriver } from '../../Store/actions/adminActions';
+import { initRequestedDrivers, rejectDriver, verifyDriver } from '../../store/actions/adminActions';
 import { verifyDriversList, rejectDriverRequest } from '../../utils/adminUtils';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';

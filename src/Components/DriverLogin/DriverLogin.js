@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { updateDriverToken } from '../../Store/actions/driverActions';
+import { updateDriverToken } from '../../store/actions/driverActions';
 import { registerDriver } from '../../utils/SocketUtils';
 import { getLocation } from '../../utils/HelperFunctions';
 import { BASE_URL } from '../../Data/Constants';

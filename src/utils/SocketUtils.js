@@ -1,7 +1,7 @@
 import io from 'socket.io-client';
-import { store } from '../Store/store';
-import { initDriversList, updateDriverInfo, updateDriverLocation, removeDriver, deleteDriverToken } from '../Store/actions/driverActions';
-import { initUsersList, addUser, removeUser, bookResponse, unbookResponse } from '../Store/actions/userActions';
+import { store } from '../store/store';
+import { initDriversList, updateDriverInfo, updateDriverLocation, removeDriver, deleteDriverToken } from '../store/actions/driverActions';
+import { initUsersList, addUser, removeUser, bookResponse, unbookResponse } from '../store/actions/userActions';
 import { BASE_URL } from '../Data/Constants';
 
 const socket = io(BASE_URL);
