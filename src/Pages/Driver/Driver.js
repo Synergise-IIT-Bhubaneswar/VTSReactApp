@@ -18,17 +18,18 @@ const useStyles = makeStyles((theme) => ({
 	}
 }));
 
-const Driver = () => {
+const Driver = (props) => {
 	const classes = useStyles();
+	console.log(props);
 	return (
 		<>
-			<DriverLogin />
+
 			<Grid container justify="center" className={classes.root} alignItems="stretch">
 				<Grid item xs={12} md={6} className={classes.mapDiv}>
 					<Map />
 				</Grid>
 				<Grid item xs={12} md={6}>
-					<DriverPanel />
+					{!props.driverToken? <DriverLogin /> : <DriverPanel />}
 				</Grid>
 			</Grid>
 		</>
