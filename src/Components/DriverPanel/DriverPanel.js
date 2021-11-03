@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { getLocation } from '../../utils/HelperFunctions';
 import { emitDriverLocation, emitDriverData } from '../../utils/SocketUtils';
 import { DRIVER_LOCATION_UPDATE_INTERVAL, BASE_URL } from '../../Data/Constants';
-import { deleteDriverToken } from '../../Store/actions/driverActions';
+import { deleteDriverToken } from '../../store/actions/driverActions';
 import { registerDriver } from '../../utils/SocketUtils';
 
 import Grid from '@material-ui/core/Grid';

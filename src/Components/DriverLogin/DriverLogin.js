@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { updateDriverToken } from '../../Store/actions/driverActions';
+import { updateDriverToken } from '../../store/actions/driverActions';
 import { registerDriver } from '../../utils/SocketUtils';
 import { getLocation } from '../../utils/HelperFunctions';
 import { BASE_URL } from '../../Data/Constants';
@@ -236,13 +236,12 @@ class DriverLogin extends Component {
 		</Container>);
 		
 		return (
-			<Dialog
-				open={this.props.driverToken === null}
+			<div
 				aria-labelledby="login-dialog">
 				<DialogContent>
 					{this.state.isLoading ? (<CircularProgress color="secondary" />) :loginForm}
 				</DialogContent>
-			</Dialog>
+			</div>
 		);
 	}
 }
